@@ -28,7 +28,7 @@ venv.bak/
 # Environment variables
 .env
 *.env
-
+env
 # Log files
 *.log
 
