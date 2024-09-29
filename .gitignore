@@ -1,0 +1,45 @@
+# Python specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# MySQL specific ignores
+*.sql
+*.sqlite3
+*.db
+
+# IDE specific ignores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+*.ipynb
+
+# Environment variables
+.env
+*.env
+
+# Log files
+*.log
+
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Coverage files
+.coverage
+.coverage.*
+.cache
+
+# Migrations
+migrations/
