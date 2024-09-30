@@ -5,7 +5,7 @@
 ## Special thanks for all the people who had helped this project so far:
 Insert Name Below and Github Account Name:
 
-* [Contributor #1](http://LINK_HERE)
+* [Frandel Wanjawa](https://github.com/franfreezy)
 * [Contributor #2](http://LINK_HERE)
 * [Contributor #3](http://LINK_HERE)
 
@@ -21,3 +21,4 @@ We're currently looking for contributions for the following:
 - [ ] Add More Features
 - [ ] Report Issues
  
+Frandel can help with bug fixes, improve documentation and adding more features
