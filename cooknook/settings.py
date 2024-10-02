@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cooknook',
         'USER': 'root',
-        'PASSWORD': 'localpass',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
