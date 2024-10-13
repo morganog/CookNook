@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VEGE</title>   
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            border-radius: 25px;
+            background-color: rgb(34, 178, 255);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: rgb(20, 150, 220);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h2>VEGES UPLOAD</h2>
+            <div class="form-group">
+                <label for="recipeName">Recipe Name</label>
+                <input name="name" required type="text" id="recipeName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="description" for="recipeDescription">Recipe Description</label>
+                <textarea name="descp" required id="recipeDescription" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recipeImage">Image</label>
+                <input name="image" required type="file" id="recipeImage" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="recipeVideo">Video</label>
+                <input name="video" required type="file" id="recipevideo" class="form-control">
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn-primary">Upload</button>
+            </div>
+        </form>
+        <button onclick="window.location.href='/'">EXIT</button>
+    
+        
+        
